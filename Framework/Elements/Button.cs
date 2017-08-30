@@ -1,5 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace Framework.Elements
 {
@@ -8,14 +7,5 @@ namespace Framework.Elements
         public Button(By locator, string description) : base(locator, description)
         {
         }
-
-        public void Submit()
-        {
-            WaitElementIsVisible();
-            Assert.IsTrue(IsPresent(), "Element is not present");
-            Logger.Info("Submit " + Description);
-            Driver.FindElement(Locator).Submit();
-        }
-
     }
 }

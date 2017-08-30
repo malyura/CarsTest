@@ -39,7 +39,7 @@ namespace CarsTest.Pages
 
         public void OpenCarDescription()
         {
-            btnSearch.Submit();
+            btnSearch.Click();
         }
     }
 }

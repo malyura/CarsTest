@@ -6,6 +6,7 @@ namespace Framework.Utilites
     public class Verify
     {
         private Logger logger = LogManager.GetCurrentClassLogger();
+
         public void AreEqual(string s1, string s2, string message)
         {
             try

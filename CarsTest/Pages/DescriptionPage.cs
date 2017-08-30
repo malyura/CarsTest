@@ -12,6 +12,7 @@ namespace CarsTest.Pages
         private Tab tabTrims = new Tab(By.XPath("//a[contains(@href,'trims')]"),"tab Trims");
         private Link linkCarConfig = new Link(By.XPath("//div[@id='mmy-trims']//a[contains(@href,'trims')]"),"link Configuration page");
         private Label lblDescription = new Label(By.XPath("//div[contains(@class,'title-year')]//h1"),"car description");
+
         public DescriptionPage() : base(new Menu(locCarDescription,"Description page is open"))
         {
         }

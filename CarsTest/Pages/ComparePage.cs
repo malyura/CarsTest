@@ -12,6 +12,7 @@ namespace CarsTest.Pages
         private Button btnAdd = new Button(By.XPath("//cui-icon[@name='plus-line']"),"Open Add form");
         private ListElements lstEngines = new ListElements(By.XPath("//div[@id='researchCompareRoot']//cars-compare-compare-info[contains(@header,'Engine')]//span[contains(@class,'three-cars')]"), "cars engines list");
         private ListElements lstTransmissions = new ListElements(By.XPath("//div[@id='researchCompareRoot']//cars-compare-compare-info[@header='Transmission']//span[contains(@class,'three-cars')]"),"cars transmissions list");
+
         public ComparePage() : base(new Menu(locCompair, "Page SelectCompare is open"))
         {
         }

@@ -16,8 +16,8 @@ namespace Framework
         protected BasePage(BaseElement element)
         {
             Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(Config.ExplicitlyWait));
-            element.WaitElementIsVisible();
             Assert.IsTrue(element.IsPresent(), "Element is not present");
+            element.WaitElementIsVisible();        
         }
 
         protected void LoadPage(string url)

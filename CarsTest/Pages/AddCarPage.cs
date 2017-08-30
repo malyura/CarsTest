@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 
 namespace CarsTest.Pages
 {
-    class AddCarPage:BasePage
+    public class AddCarPage:BasePage
     {
         private static By locAddForm = By.XPath("//div[contains(@class,'modal-content')]");
         private Combobox cmbMake = new Combobox(By.XPath("//form[@id='addCarFormModal']//select[@name='makeDropdown']"),"combobox a Make");

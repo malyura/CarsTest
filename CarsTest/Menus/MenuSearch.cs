@@ -22,6 +22,5 @@ namespace CarsTest.Menus
                 }
             }
         }
-
     }
 }

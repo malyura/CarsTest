@@ -22,13 +22,13 @@ namespace CarsTest.Menus
                 case MenuBuyItems.ResearchCarModel:
                     linkResearchCarModel.Click();
                     break;
+
                 default:
                 {
                     throw new IndexOutOfRangeException("Incorrect item");
                 }
             }
         }
-
     }
-    }
+}
 

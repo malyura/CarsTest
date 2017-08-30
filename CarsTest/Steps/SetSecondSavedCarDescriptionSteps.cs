@@ -34,6 +34,5 @@ namespace CarsTest.Steps
             var addCarPage = new AddCarPage();
             addCarPage.ClickDone();
         }
-
     }
 }

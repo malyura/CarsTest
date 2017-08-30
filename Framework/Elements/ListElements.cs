@@ -48,7 +48,7 @@ namespace Framework.Elements
         public int GetRandomIndexListElements()
         {
             WaitListElementsIsVisible();
-            return new Random().Next(0, Driver.FindElements(Locator).Count);
+            return new Random().Next(0, GetElements().Count);
         }
 
         private void WaitListElementsIsVisible()

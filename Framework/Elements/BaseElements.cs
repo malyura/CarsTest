@@ -21,9 +21,17 @@ namespace Framework.Elements
             this.Description = description;
         }
 
+        public void Click()
+        {
+            Assert.IsTrue(IsPresent(), "Element is not present");
+            WaitElementIsVisible();
+            Logger.Info("Click " + Description);
+            GetElement().Click();
+        }
+
         public string GetAttribute(string attributeName)
         {
-            return Driver.FindElement(Locator).GetAttribute(attributeName);
+            return GetElement().GetAttribute(attributeName);
         }
 
         public By GetLocator()
@@ -40,7 +48,7 @@ namespace Framework.Elements
         {
             Assert.IsTrue(IsPresent(), "Element is not present");
             WaitElementIsVisible();  
-            return Driver.FindElement(Locator).Text;
+            return GetElement().Text;
         }
 
         public bool IsPresent()
@@ -52,14 +60,5 @@ namespace Framework.Elements
         {
             Wait.Until(ExpectedConditions.ElementIsVisible(Locator));
         }
-
-        public void Click()
-        {
-            Assert.IsTrue(IsPresent(), "Element is not present");
-            WaitElementIsVisible();
-            Logger.Info("Click " + Description);
-            Driver.FindElement(Locator).Click();
-        }
-
     }
 }

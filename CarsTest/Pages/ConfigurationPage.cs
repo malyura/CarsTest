@@ -27,7 +27,6 @@ namespace CarsTest.Pages
         public void OpenMainPage()
         {
             LoadPage(Config.Url);
-        }
-       
+        }  
     }
 }
