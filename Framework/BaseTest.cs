@@ -26,7 +26,7 @@ namespace Framework
         public void TestCleanup()
         {
             Logger.Debug("Quit browser");
-           // Browser.Quit();
+            Browser.Quit();
         }
     }
 }
