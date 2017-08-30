@@ -13,14 +13,14 @@ namespace CarsTest.Steps
             var comparePage = new ComparePage();
         }
 
-        [Then(@"Configuration first and second car are the same")]
-        public void ThenConfigurationFirstAndSecondCarAreTheSame()
+        [Then(@"Configuration First and Second cars coincides with saved configuration")]
+        public void ThenConfigurationFirstAndSecondCarsCoincidesWithSavedConfiguration()
         {
             var comparePage = new ComparePage();
             var carFirst = ScenarioContext.Current["first_car"] as CarProperties;
             var carSecond = ScenarioContext.Current["second_car"] as CarProperties;
             carFirst.EqualCarConfig(comparePage.GetFirstCar(), "First car");
-            carSecond.EqualCarConfig(comparePage.GetSecondCar(),"Second car");
+            carSecond.EqualCarConfig(comparePage.GetSecondCar(), "Second car");
         }
     }
 }

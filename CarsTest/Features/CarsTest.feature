@@ -48,4 +48,4 @@ Scenario: CarsTest
 	Then Compare page is open
 
 	When I check description car on Compare page
-	Then Configuration first and second car are the same
+	Then Configuration First and Second cars coincides with saved configuration

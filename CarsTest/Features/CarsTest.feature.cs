@@ -146,7 +146,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 50
  testRunner.When("I check description car on Compare page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 51
- testRunner.Then("Configuration first and second car are the same", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Configuration First and Second cars coincides with saved configuration", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
